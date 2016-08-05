@@ -7,8 +7,9 @@ import { HeroSearchService } from '../hero-search/hero-search.service';
 import { Hero } from '../hero/hero';
 
 @Component({
+  moduleId: module.id,
   selector: 'hero-search',
-  templateUrl: 'app/hero-search/hero-search.component.html',
+  templateUrl: 'hero-search.component.html',
   providers: [HeroSearchService]
 })
 export class HeroSearchComponent implements OnInit {

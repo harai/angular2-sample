@@ -6,9 +6,10 @@ import { HeroService } from '../hero/hero.service';
 import { HeroSearchComponent } from '../hero-search/hero-search.component';
 
 @Component({
+  moduleId: module.id,
   selector: 'my-dashboard',
-  templateUrl: 'app/dashboard/dashboard.component.html',
-  styleUrls: ['app/dashboard/dashboard.component.css'],
+  templateUrl: 'dashboard.component.html',
+  styleUrls: ['dashboard.component.css'],
   directives: [HeroSearchComponent]
 })
 export class DashboardComponent implements OnInit {
