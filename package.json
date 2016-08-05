@@ -2,11 +2,11 @@
   "name": "angular2-quickstart",
   "version": "1.0.0",
   "scripts": {
-    "start": "tsc && concurrently \"npm run tsc:w\" \"npm run lite\" ",
+    "start": "npm run tsc && concurrently \"npm run tsc:w\" \"npm run lite\" ",
     "lite": "lite-server",
     "postinstall": "typings install",
-    "tsc": "tsc",
-    "tsc:w": "tsc -w",
+    "tsc": "tsc --outDir static/assets/app",
+    "tsc:w": "tsc -w --outDir static/assets/app",
     "typings": "typings"
   },
   "license": "ISC",
